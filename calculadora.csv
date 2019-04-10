@@ -1,0 +1,41 @@
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+
+# Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# File: C:\Users\Cliente\Desktop\CDLAB\calculadora.csv
+# Generated on: Wed Apr 10 13:59:31 2019
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus II software.
+
+To,Direction,Location,I/O Bank,VREF Group,Fitter Location,I/O Standard,Reserved,Current Strength,Differential Pair
+BLigar,Input,PIN_V2,1,B1_N0,PIN_AE13,,,,
+LED,Output,PIN_AE23,7,B7_N0,PIN_AA12,,,,
+SaidaDisplay[6],Output,PIN_V13,8,B8_N0,PIN_AE12,,,,
+SaidaDisplay[5],Output,PIN_V14,8,B8_N0,PIN_AD12,,,,
+SaidaDisplay[4],Output,PIN_AE11,8,B8_N0,PIN_V11,,,,
+SaidaDisplay[3],Output,PIN_AD11,8,B8_N0,PIN_AD11,,,,
+SaidaDisplay[2],Output,PIN_AC12,8,B8_N0,PIN_AF13,,,,
+SaidaDisplay[1],Output,PIN_AB12,8,B8_N0,PIN_Y12,,,,
+SaidaDisplay[0],Output,PIN_AF10,8,B8_N0,PIN_U12,,,,
+Sm0,Input,PIN_A13,4,B4_N1,PIN_A13,,,,
+Sm1,Input,PIN_N1,2,B2_N1,PIN_N1,,,,
+Sm2,Input,PIN_P1,1,B1_N0,PIN_P1,,,,
+XE1[3],Input,PIN_C13,3,B3_N0,PIN_C13,,,,
+XE1[2],Input,PIN_AC13,8,B8_N0,PIN_AC13,,,,
+XE1[1],Input,PIN_AD13,8,B8_N0,PIN_AD13,,,,
+XE1[0],Input,PIN_AF14,7,B7_N1,PIN_AF14,,,,
+XE2[3],Input,PIN_AE14,7,B7_N1,PIN_AE14,,,,
+XE2[2],Input,PIN_P25,6,B6_N0,PIN_P25,,,,
+XE2[1],Input,PIN_N26,5,B5_N1,PIN_N26,,,,
+XE2[0],Input,PIN_N24,5,B5_N1,PIN_N24,,,,

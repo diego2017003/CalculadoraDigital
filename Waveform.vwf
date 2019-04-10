@@ -1,3 +1,4 @@
+/* Simulator = Quartus II Simulator */
 /*
 WARNING: Do NOT edit the input and output ports in this file in a text
 editor if you plan to continue editing the block that represents it in
@@ -267,15 +268,7 @@ TRANSITION_LIST("BLigar")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 240.0;
-		NODE
-		{
-			REPEAT = 1;
-			LEVEL 0 FOR 240.0;
-			LEVEL 1 FOR 240.0;
-		}
-		LEVEL 0 FOR 240.0;
-		LEVEL 1 FOR 40.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -356,15 +349,12 @@ TRANSITION_LIST("Sm0")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 80.0;
 		NODE
 		{
-			REPEAT = 5;
-			LEVEL 0 FOR 80.0;
-			LEVEL 1 FOR 80.0;
+			REPEAT = 20;
+			LEVEL 0 FOR 25.0;
+			LEVEL 1 FOR 25.0;
 		}
-		LEVEL 0 FOR 80.0;
-		LEVEL 1 FOR 40.0;
 	}
 }
 
@@ -373,7 +363,12 @@ TRANSITION_LIST("Sm1")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		NODE
+		{
+			REPEAT = 10;
+			LEVEL 0 FOR 50.0;
+			LEVEL 1 FOR 50.0;
+		}
 	}
 }
 
@@ -382,7 +377,12 @@ TRANSITION_LIST("Sm2")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		NODE
+		{
+			REPEAT = 5;
+			LEVEL 0 FOR 100.0;
+			LEVEL 1 FOR 100.0;
+		}
 	}
 }
 
@@ -391,9 +391,8 @@ TRANSITION_LIST("XE1[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 240.0;
-		LEVEL 1 FOR 480.0;
-		LEVEL 0 FOR 280.0;
+		LEVEL 0 FOR 800.0;
+		LEVEL 1 FOR 200.0;
 	}
 }
 
@@ -404,11 +403,11 @@ TRANSITION_LIST("XE1[2]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 2;
-			LEVEL 1 FOR 240.0;
-			LEVEL 0 FOR 240.0;
+			REPEAT = 1;
+			LEVEL 0 FOR 400.0;
+			LEVEL 1 FOR 400.0;
 		}
-		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 200.0;
 	}
 }
 
@@ -419,11 +418,11 @@ TRANSITION_LIST("XE1[1]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 4;
-			LEVEL 0 FOR 120.0;
-			LEVEL 1 FOR 120.0;
+			REPEAT = 2;
+			LEVEL 0 FOR 200.0;
+			LEVEL 1 FOR 200.0;
 		}
-		LEVEL 0 FOR 40.0;
+		LEVEL 0 FOR 200.0;
 	}
 }
 
@@ -434,56 +433,14 @@ TRANSITION_LIST("XE1[0]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 8;
-			LEVEL 0 FOR 60.0;
-			LEVEL 1 FOR 60.0;
+			REPEAT = 5;
+			LEVEL 0 FOR 100.0;
+			LEVEL 1 FOR 100.0;
 		}
-		LEVEL 0 FOR 40.0;
 	}
 }
 
 TRANSITION_LIST("XE2[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 640.0;
-		LEVEL 1 FOR 360.0;
-	}
-}
-
-TRANSITION_LIST("XE2[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 1;
-			LEVEL 0 FOR 320.0;
-			LEVEL 1 FOR 320.0;
-		}
-		LEVEL 0 FOR 320.0;
-		LEVEL 1 FOR 40.0;
-	}
-}
-
-TRANSITION_LIST("XE2[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 3;
-			LEVEL 0 FOR 160.0;
-			LEVEL 1 FOR 160.0;
-		}
-		LEVEL 0 FOR 40.0;
-	}
-}
-
-TRANSITION_LIST("XE2[0]")
 {
 	NODE
 	{
@@ -495,6 +452,49 @@ TRANSITION_LIST("XE2[0]")
 			LEVEL 1 FOR 80.0;
 		}
 		LEVEL 0 FOR 40.0;
+	}
+}
+
+TRANSITION_LIST("XE2[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 12;
+			LEVEL 0 FOR 40.0;
+			LEVEL 1 FOR 40.0;
+		}
+		LEVEL 0 FOR 40.0;
+	}
+}
+
+TRANSITION_LIST("XE2[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 25;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 20.0;
+		}
+	}
+}
+
+TRANSITION_LIST("XE2[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 50;
+			LEVEL 0 FOR 10.0;
+			LEVEL 1 FOR 10.0;
+		}
 	}
 }
 
