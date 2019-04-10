@@ -1,0 +1,9 @@
+ENTITY SOMA IS 
+PORT(a,b,Cin:IN BIT;
+	s,Cout:OUT BIT);
+END SOMA;
+ARCHITECTURE SOMADOR OF SOMA IS
+BEGIN
+s<=(a)XOR(Cin)XOR(b);
+Cout<=((a)AND(b))OR((b)AND(Cin))OR((Cin)AND(a));
+END SOMADOR;

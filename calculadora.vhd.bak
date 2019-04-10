@@ -1,0 +1,9 @@
+ENTITY calculadora IS 
+	PORT(a,b,Cin:IN BIT;
+	s,Cout:OUT BIT);
+END calculadora;
+ARCHITECTURE SOMADOR OF calculadora IS
+BEGIN
+s<=(a)XOR(Cin)XOR(b);
+Cout<=((a)AND(b))OR((b)AND(Cin))OR((Cin)AND(a));
+END SOMADOR;
